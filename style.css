@@ -457,6 +457,7 @@
     background-size: cover;
     height: 620px;
     animation: slider 30s 2s infinite;
+    position: relative;
 }
 
 .cursor {
@@ -492,7 +493,7 @@
     justify-content: space-evenly;
     width: 100%;
     position: absolute;
-    bottom: -12px;
+    bottom: 0;
 }
 
 /* Shopping-Section */
