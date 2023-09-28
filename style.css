@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+:root {
+    --main-color: #febd68;
+    --main-bg-color1: #131921;
+    --main-bg-color2: #232f3e;
+    --main-bg-color3: #e2e7e6;
+    --main-bg-color4: #f3f3f3;
+    --main-bg-color5: #fdbc27f0;
+    --main-bg-color6: #485769;
+    --main-color1: #cccccc;
+    --main-color2: #ffffff;
+    --main-color3: #007185;
+    --main-panel1: #37475A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inclusive Sans', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.border:hover {
+    border: 1.5px solid var(--main-color2);
+    border-radius: 4px;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+.text {
+    text-decoration: none;
+    color: var(--main-color2);
+}
+
+/* Navbar */
+
+.navbar {
+    height: 60px;
+    background-color: var(--main-bg-color1);
+    color: var(--main-color2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Box 1 */
+
+.nav-logo {
+    height: 50px;
+    width: 110px;
+}
+
+.logo {
+    background-image: url('Web-Docs/amazon_logo.png');
+    background-size: cover;
+    overflow: hidden;
+    height: 50px;
+}
+
+/* Box 2 */
+
+.location {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.add-hello {
+    font-size: 15px;
+    color: var(--main-color1);
+    margin-left: 20px;
+}
+
+.add-select {
+    font-size: 15px;
+    font-weight: 550;
+    margin-left: 4px;
+    border: var(--main-bg-color1);
+    background-color: var(--main-bg-color1);
+    color: var(--main-color2);
+    width: 160px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* Box 3 */
+
+.search-bar {
+    display: flex;
+    height: 40px;
+    width: 50vw;
+}
+
+.search-select {
+    width: 47px;
+    padding: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: var(--main-bg-color4);
+    font-weight: 550;
+    border: none;
+    outline: none;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 7px;
+    border: none;
+    font-size: 15px;
+    font-weight: 550;
+    outline: none;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 45px;
+    color: var(--main-bg-color1);
+    background-color: var(--main-color);
+}
+
+/* Box 4 */
+
+.sign-in {
+    padding: 5px;
+}
+
+/* Sign-in-hover */
+
+.sign-in-hover {
+    height: 500px;
+    width: 500px;
+    background-color: var(--main-color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    position: absolute;
+    top: 55px;
+    right: 100px;
+    border-radius: 5px;
+}
+
+/* Sign-in-hover-first */
+
+.sign-in-hover-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.sign-in-hover-first button {
+    height: 30px;
+    width: 250px;
+    background-color: var(--main-bg-color5);
+    border: 2px solid var(--main-bg-color5);
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.sign-in-hover-first button:hover {
+    font-weight: 700;
+}
+
+.sign-in-hover-first p {
+    font-size: 12px;
+    color: var(--main-bg-color1);
+    margin-bottom: 5px;
+}
+
+.sign-in-hover-first p a {
+    text-decoration: none;
+    color: var(--main-color3);
+}
+
+.sign-in-hover-first p a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Sign-in-hover-second */
+
+.sign-in-hover-second {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 20px;
+    border-top: 1px solid var(--main-color3);
+}
+
+.sign-in-hover-second .left,
+.sign-in-hover-second .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sign-in-hover-second .right {
+    border-left: 0.5px solid var(--main-color3);
+    padding: 0 15px;
+}
+
+
+.sign-in-hover-second h3 {
+    color: var(--main-bg-color1);
+}
+
+.sign-in-hover-second li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.sign-in-hover-second a {
+    text-decoration: none;
+    color: var(--main-bg-color1);
+    font-size: 15px;
+}
+
+.sign-in-hover-second a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.sign-in:hover {
+    .sign-in-hover {
+        visibility: visible;
+    }
+}
+
+.sign-in .first {
+    font-size: 14px;
+}
+
+.sign-in .second {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sign-in .second i {
+    color: var(--main-color1);
+}
+
+/* Box 5 */
+
+.returns-orders {
+    padding: 5px;
+}
+
+.returns-orders .first {
+    font-size: 14px;
+}
+
+.returns-orders .second {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Box 6 */
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.cart i {
+    font-size: 30px;
+}
+
+.cart p {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+/* side-menu */
+
+.side-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    z-index: 100;
+    background-color: var(--main-color2);
+    height: 100vh;
+    overflow: auto;
+    display: none;
+}
+
+/* Header */
+
+.side-menu .header {
+    background-color: var(--main-bg-color2);
+    color: var(--main-color2);
+    padding: 10px 25px;
+    height: 7vh;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-menu .header h1 {
+    font-size: 20px;
+}
+
+.side-menu .header h1 i {
+    background: var(--main-color2);
+    color: var(--main-bg-color2);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.side-menu .header>i {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Content */
+
+.side-menu .box {
+    height: fit-content;
+    width: 100%;
+    border-bottom: 2px solid var(--main-color1);
+}
+
+.side-menu .box h2 {
+    margin-bottom: 10px;
+}
+
+.side-menu .box h5 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #485769;
+    font-size: 14px;
+    font-weight: 100;
+    cursor: pointer;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+.side-menu .box h5 i {
+    font-size: 20px;
+}
+
+.side-menu .box h5:hover {
+    background-color: var(--main-bg-color4);
+    color: var(--main-bg-color2);
+    font-weight: 200;
+}
+
+/* opt-bar */
+
+.opt-bar {
+    display: flex;
+    background-color: var(--main-bg-color2);
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.opt-bar-left {
+    display: flex;
+}
+
+
+.opt-bar-left a {
+    padding: 10px;
+}
+
+.side-bar,
+.mini-tv,
+.sell,
+.best-sellers,
+.todays-deals,
+.mobiles,
+.coustomer-service,
+.prime,
+.electronics {
+    margin: 0 5px;
+    color: var(--main-color1);
+}
+
+.prime i {
+    color: var(--main-color1);
+    font-size: 14px;
+}
+
+.prime:hover {
+    .prime-hover {
+        visibility: visible;
+    }
+}
+
+.prime-hover {
+    height: 350px;
+    width: 350px;
+    background-color: var(--main-color2);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    right: 500px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.prime-hover .img {
+    height: 320px;
+    width: 320px;
+    background-image: url('Web-Docs/prime_image.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.opt-bar-right-logo img {
+    height: 35px;
+}
+
+/* Hero-Section */
+
+.hero-section {
+    background-image: url('Web-Docs/hero_image_1.jpg');
+    background-size: cover;
+    height: 620px;
+    animation: slider 30s 2s infinite;
+}
+
+.cursor {
+    height: 250px;
+    cursor: pointer;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url('Web-Docs/hero_image_1.jpg');
+    }
+
+    25% {
+        background-image: url('Web-Docs/hero_image_2.jpg');
+    }
+
+    40% {
+        background-image: url('Web-Docs/hero_image_3.jpg');
+    }
+
+    75% {
+        background-image: url('Web-Docs/hero_image_4.jpg');
+    }
+
+    100% {
+        background-image: url('Web-Docs/hero_image_5.jpg');
+    }
+}
+
+.hero-section-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    bottom: -12px;
+}
+
+/* Shopping-Section */
+
+.box {
+    height: 360px;
+    width: 22%;
+    background-color: var(--main-color2);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.box .img {
+    height: 250px;
+    background-size: cover;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.box a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--main-color3);
+}
+
+.box a:hover {
+    font-weight: bold;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.shopping-section {
+    background-color: var(--main-bg-color3);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+/* Main-Sign-in */
+
+.main-sign-in {
+    height: 200px;
+    background-color: var(--main-color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sign-in-content {
+    height: 150px;
+    width: 100%;
+    border-top: 2px solid var(--main-color1);
+    border-bottom: 2px solid var(--main-color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-sign-in-content .first {
+    font-size: 15px;
+}
+
+
+.main-sign-in-content button {
+    height: 30px;
+    width: 250px;
+    background-color: var(--main-bg-color5);
+    border: 2px solid var(--main-bg-color5);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.main-sign-in-content button:hover {
+    font-weight: 700;
+}
+
+.main-sign-in-content .last {
+    font-size: 12px;
+}
+
+.main-sign-in-content .last a {
+    text-decoration: none;
+    color: var(--main-color3);
+}
+
+.main-sign-in-content .last a:hover {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+/* Footer */
+/* Panel 1 */
+
+.panel1 {
+    height: 50px;
+    background-color: var(--main-panel1);
+}
+
+.panel1 .back-top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel1 .back-top:hover {
+    background-color: var(--main-bg-color6);
+}
+
+.panel1 a {
+    text-decoration: none;
+    color: var(--main-color2);
+    font-size: large;
+}
+
+/* Panel 2 */
+
+.panel2 {
+    height: 350px;
+    background-color: var(--main-bg-color2);
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-bottom: .5px solid var(--main-bg-color3);
+}
+
+.panel2-box h3 {
+    color: var(--main-color2);
+}
+
+.panel2-box li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.panel2-box a {
+    text-decoration: none;
+    color: var(--main-color1);
+}
+
+.panel2-box a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* Panel 3 */
+
+.panel3 {
+    height: 200px;
+    background-color: var(--main-bg-color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*First */
+
+.panel3-first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* Foot-logo */
+
+.foot-logo {
+    height: 70px;
+    width: 130px;
+    margin: 0 50px;
+}
+
+.foot-logo a .logo {
+    height: 75px;
+    width: 130px;
+    background-image: url('Web-Docs/amazon_logo.png');
+    background-size: cover;
+}
+
+/* Language Selector */
+
+.language {
+    font-size: small;
+    height: 35px;
+    width: 150px;
+    border: .5px solid var(--main-color1);
+    border-radius: 3px;
+    color: var(--main-color1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    margin: 0 50px;
+    position: relative;
+}
+
+.language:hover {
+    color: var(--main-color2);
+}
+
+.language .globe {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.language .drop-down,
+.language .drop-up {
+    font-size: x-small;
+}
+
+.language .drop-down {
+    margin-top: 8px;
+    position: absolute;
+    left: 90%
+}
+
+.language .drop-up {
+    margin-bottom: 8px;
+    position: absolute;
+    left: 90%
+}
+
+/* Second */
+
+.panel3-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.panel3-second a {
+    text-decoration: none;
+    color: var(--main-color1);
+    margin: 10px 15px;
+    font-size: small;
+}
+
+.panel3-second a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* Panel 4 */
+
+.panel4 {
+    height: 150px;
+    background-color: var(--main-bg-color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*First */
+
+.panel4-first {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.panel4-first a {
+    margin: 10px;
+    text-decoration: none;
+    color: var(--main-color1);
+    font-size: small;
+}
+
+.panel4-first a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* Second */
+
+.panel4-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel4-second-first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel4-second-first a {
+    margin: 10px;
+    text-decoration: none;
+    color: var(--main-color1);
+    font-size: small;
+}
+
+
+.panel4-second-first a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.panel4-second-second {
+    font-size: smaller;
+    color: var(--main-color1);
+}

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon | Developer Ashutosh</title>
+    <link rel="shortcut icon" href="Web-Docs/amazon_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- Box 1 -->
+        <div class="nav-logo border hover">
+            <a href="#">
+                <div class="logo"></div>
+            </a>
+        </div>
+        <!-- Box 2 -->
+        <div class="location border hover">
+            <p class="add-hello">Hello</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot fa-bounce"></i>
+                <select class="add-select hover">
+                    <option value="" selected>Select your country</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antartica">Antarctica</option>
+                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Belize">Belize</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bermuda">Bermuda</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bosnia and Herzegowina">Bosnia and Herzegowina</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Bouvet Island">Bouvet Island</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                    <option value="Brunei Darussalam">Brunei Darussalam</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Cape Verde">Cape Verde</option>
+                    <option value="Cayman Islands">Cayman Islands</option>
+                    <option value="Central African Republic">Central African Republic</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Christmas Island">Christmas Island</option>
+                    <option value="Cocos Islands">Cocos (Keeling) Islands</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Comoros">Comoros</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Congo">Congo, the Democratic Republic of the</option>
+                    <option value="Cook Islands">Cook Islands</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cota D'Ivoire">Cote d'Ivoire</option>
+                    <option value="Croatia">Croatia (Hrvatska)</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="East Timor">East Timor</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Falkland Islands">Falkland Islands (Malvinas)</option>
+                    <option value="Faroe Islands">Faroe Islands</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="France Metropolitan">France, Metropolitan</option>
+                    <option value="French Guiana">French Guiana</option>
+                    <option value="French Polynesia">French Polynesia</option>
+                    <option value="French Southern Territories">French Southern Territories</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Gibraltar">Gibraltar</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Greenland">Greenland</option>
+                    <option value="Grenada">Grenada</option>
+                    <option value="Guadeloupe">Guadeloupe</option>
+                    <option value="Guam">Guam</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Guinea-Bissau">Guinea-Bissau</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Heard and McDonald Islands">Heard and Mc Donald Islands</option>
+                    <option value="Holy See">Holy See (Vatican City State)</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran">Iran (Islamic Republic of)</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Kiribati">Kiribati</option>
+                    <option value="Democratic People's Republic of Korea">Korea, Democratic People's Republic of
+                    </option>
+                    <option value="Korea">Korea, Republic of</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Lao">Lao People's Democratic Republic</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Macau">Macau</option>
+                    <option value="Macedonia">Macedonia, The Former Yugoslav Republic of</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Marshall Islands">Marshall Islands</option>
+                    <option value="Martinique">Martinique</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Mayotte">Mayotte</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Micronesia">Micronesia, Federated States of</option>
+                    <option value="Moldova">Moldova, Republic of</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Netherlands Antilles">Netherlands Antilles</option>
+                    <option value="New Caledonia">New Caledonia</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Niue">Niue</option>
+                    <option value="Norfolk Island">Norfolk Island</option>
+                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Palau">Palau</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Papua New Guinea">Papua New Guinea</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Pitcairn">Pitcairn</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Reunion">Reunion</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russian Federation</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                    <option value="Saint LUCIA">Saint LUCIA</option>
+                    <option value="Saint Vincent">Saint Vincent and the Grenadines</option>
+                    <option value="Samoa">Samoa</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Sierra">Sierra Leone</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia (Slovak Republic)</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Solomon Islands">Solomon Islands</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="South Georgia">South Georgia and the South Sandwich Islands</option>
+                    <option value="Span">Spain</option>
+                    <option value="SriLanka">Sri Lanka</option>
+                    <option value="St. Helena">St. Helena</option>
+                    <option value="St. Pierre and Miguelon">St. Pierre and Miquelon</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Suriname">Suriname</option>
+                    <option value="Svalbard">Svalbard and Jan Mayen Islands</option>
+                    <option value="Swaziland">Swaziland</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Syria">Syrian Arab Republic</option>
+                    <option value="Taiwan">Taiwan, Province of China</option>
+                    <option value="Tajikistan">Tajikistan</option>
+                    <option value="Tanzania">Tanzania, United Republic of</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Tokelau">Tokelau</option>
+                    <option value="Tonga">Tonga</option>
+                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Turks and Caicos">Turks and Caicos Islands</option>
+                    <option value="Tuvalu">Tuvalu</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                    <option value="United States Minor Outlying Islands">United States Minor Outlying Islands
+                    </option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Vanuatu">Vanuatu</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Vietnam">Viet Nam</option>
+                    <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+                    <option value="Virgin Islands (U.S)">Virgin Islands (U.S.)</option>
+                    <option value="Wallis and Futana Islands">Wallis and Futuna Islands</option>
+                    <option value="Western Sahara">Western Sahara</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                </select>
+            </div>
+        </div>
+        <!-- Box 3 -->
+        <div class="search-bar">
+            <select class="search-select hover">
+                <option selected="selected" value="search-alias=aps">All</option>
+                <option value="search-alias=alexa-skills">Alexa Skills</option>
+                <option value="search-alias=amazon-devices">Amazon Devices</option>
+                <option value="search-alias=fashion">Amazon Fashion</option>
+                <option value="search-alias=nowstore">Amazon Fresh</option>
+                <option value="search-alias=amazon-pharmacy">Amazon Pharmacy</option>
+                <option value="search-alias=appliances">Appliances</option>
+                <option value="search-alias=mobile-apps">Apps & Games</option>
+                <option value="search-alias=baby">Baby</option>
+                <option value="search-alias=beauty">Beauty</option>
+                <option value="search-alias=stripbooks">Books</option>
+                <option value="search-alias=automotive">Car & Motorbike</option>
+                <option value="search-alias=apparel">Clothing & Accessories</option>
+                <option value="search-alias=collectibles">Collectibles</option>
+                <option value="search-alias=computers">Computers & Accessories</option>
+                <option value="search-alias=electronics">Electronics</option>
+                <option value="search-alias=furniture">Furniture</option>
+                <option value="search-alias=lawngarden">Garden & Outdoors</option>
+                <option value="search-alias=gift-cards">Gift Cards</option>
+                <option value="search-alias=grocery">Grocery & Gourmet Foods</option>
+                <option value="search-alias=hpc">Health & Personal Care</option>
+                <option value="search-alias=kitchen">Home & Kitchen</option>
+                <option value="search-alias=industrial">Industrial & Scientific</option>
+                <option value="search-alias=jewelry">Jewellery</option>
+                <option value="search-alias=digital-text">Kindle Store</option>
+                <option value="search-alias=luggage">Luggage & Bags</option>
+                <option value="search-alias=luxury-beauty">Luxury Beauty</option>
+                <option value="search-alias=dvd">Movies & TV Shows</option>
+                <option value="search-alias=popular">Music</option>
+                <option value="search-alias=mi">Musical Instruments</option>
+                <option value="search-alias=office-products">Office Products</option>
+                <option value="search-alias=pets">Pet Supplies</option>
+                <option value="search-alias=instant-video">Prime Video</option>
+                <option value="search-alias=shoes">Shoes & Handbags</option>
+                <option value="search-alias=software">Software</option>
+                <option value="search-alias=sporting">Sports, Fitness & Outdoors</option>
+                <option value="search-alias=specialty-aps-sns">Subscribe & Save</option>
+                <option value="search-alias=home-improvement">Tools & Home Improvement</option>
+                <option value="search-alias=toys">Toys & Games</option>
+                <option value="search-alias=under-ten-dollars">Under ₹500</option>
+                <option value="search-alias=videogames">Video Games</option>
+                <option value="search-alias=watches">Watches</option>
+            </select>
+            <input type="search" class="search-input" placeholder="Search Amazon">
+            <div class="search-icon hover"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <!-- Box 4 -->
+        <div class="sign-in border hover">
+            <p class="first">Hello,sign in</p>
+            <p class="second">Accounts & Lists
+                <i class="fa-solid fa-caret-down"></i>
+            </p>
+            <div class="sign-in-hover">
+                <div class="sign-in-hover-first">
+                    <button class="hover">Sign in</button>
+                    <p>New Coustomer? <a href="#">Start here.</a></p>
+                </div>
+                <div class="sign-in-hover-second">
+                    <div class="left">
+                        <h3>Your Lists</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Create a Wish List
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Wish from Any Website
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Baby Wishlist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Discover Your Style
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Explore Showroom
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Your Account</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Your Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Your Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Your Wish List </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Your Recommendations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Your Prime Membership
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Your Prime Vedios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Your Subscribe &Save Items
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Memberships & Subscription
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Your Seller Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Manage Your Content & Device
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Your Free Amazon Business Account
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Box 5 -->
+        <div class="returns-orders border hover">
+            <p class="first">Returns</p>
+            <p class="second">& Orders</p>
+        </div>
+        <!-- Box 6 -->
+        <div class="cart hover border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Cart</p>
+        </div>
+    </div>
+    <div class="side-menu">
+        <div class="header">
+            <h1>
+                <i class="fa-solid fa-user"></i>Hello, sign in
+            </h1>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="box">
+            <h2>Digital Content & Devices</h2>
+            <h5>
+                <p>Amazon Music</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+            <h5>
+                <p>Kindle E-readers & Books</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+            <h5>
+                <p>Amazon Appstore</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+        </div>
+        <div class="box">
+            <h2>Shop By Departure</h2>
+            <h5>
+                <p>Electronics</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+            <h5>
+                <p>Computer </p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+            <h5>
+                <p>Smart Home</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+            <h5>
+                <p>Art & Craft</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+        </div>
+        <div class="box">
+            <h2>Programs & Features</h2>
+            <h5>
+                <p>Gift Card</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+            <h5>
+                <p>Shop By Intrest</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+            <h5>
+                <p>Amazon Live</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+            <h5>
+                <p>International Shopping</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </h5>
+        </div>
+        <div class="box">
+            <h2>Help & Settings</h2>
+            <h5>
+                <p>Your Account</p>
+            </h5>
+            <h5>
+                <p> <i class="fa-solid fa-globe globe"></i> English</p>
+            </h5>
+            <h5>
+                <p> United States</p>
+            </h5>
+            <h5>
+                <p>Customer Service</p>
+            </h5>
+            <h5>
+                <p>Sign in</p>
+            </h5>
+        </div>
+    </div>
+    <div class="opt-bar">
+        <div class="opt-bar-left">
+            <!-- Box 1 -->
+            <div class="side-bar">
+                <a href="#" class="text hover border">
+                    <i class="fa-solid fa-bars"></i> All
+                </a>
+            </div>
+            <!-- Box 2 -->
+            <div class="mini-tv">
+                <a href="#" class="text hover border">
+                    Amazon miniTV
+                </a>
+            </div>
+            <!-- Box 3 -->
+            <div class="sell">
+                <a href="#" class="text hover border">
+                    Sell
+                </a>
+            </div>
+            <!-- Box 4 -->
+            <div class="best-sellers">
+                <a href="#" class="text hover border">
+                    Best Sellers
+                </a>
+            </div>
+            <!-- Box 5 -->
+            <div class="todays-deals">
+                <a href="#" class="text hover border">
+                    Today's Deals
+                </a>
+            </div>
+            <!-- Box 6 -->
+            <div class="mobiles">
+                <a href="#" class="text hover border">
+                    Mobiles
+                </a>
+            </div>
+            <!-- Box 7 -->
+            <div class="coustomer-service">
+                <a href="#" class="text hover border">
+                    Coustomer Service
+                </a>
+            </div>
+            <!-- Box 8 -->
+            <div class="prime">
+                <a href="#" class="text hover border">
+                    Prime <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <div class="prime-hover hover">
+                    <a href="#">
+                        <div class="img"></div>
+                    </a>
+                </div>
+            </div>
+            <!-- Box 9 -->
+            <div class="electronics">
+                <a href="#" class="text hover border">
+                    Electronics
+                </a>
+            </div>
+        </div>
+        <div class="opt-bar-right ">
+            <div class="opt-bar-right-logo border">
+                <a href="#">
+                    <img src="Web-Docs/opt_bar_right_image.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="hero-section">
+            <div class="cursor"></div>
+            <div class="hero-section-row">
+                <div class="box">
+                    <h2>Clothes</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box1_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="box">
+                    <h2>Prime Day</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box2_image.jpg');"></div>
+                    <a href="#">Explore all prime day offers</a>
+                </div>
+                <div class="box">
+                    <h2>Furnitures</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box3_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="box">
+                    <h2>Electronics</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box4_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="shopping-section">
+            <div class="row">
+                <div class="box">
+                    <h2>Beauty Products</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box5_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="box">
+                    <h2>Pet items</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box6_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="box">
+                    <h2>Toys</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box7_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="box">
+                    <h2>Essentials</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box8_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <h2>Fitness Items</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box9_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="box">
+                    <h2>Home Refresh Items</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box10_image.jpg');"></div>
+                    <a href="#">Shop Kitchen Upgrades</a>
+                </div>
+                <div class="box">
+                    <h2>Watches</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box11_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="box">
+                    <h2>RGB Lights</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box12_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <h2>E Study Items</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box13_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="box">
+                    <h2>50% off on selling</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box14_image.jpg');"></div>
+                    <a href="#">Register Now</a>
+                </div>
+                <div class="box">
+                    <h2>Decoration Items</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box15_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="box">
+                    <h2>Crokaries</h2>
+                    <div class="img hover" style="background-image: url('Web-Docs/box16_image.jpg');"></div>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-sign-in">
+            <div class="main-sign-in-content">
+                <p class="first">See personalized recommendations</p>
+                <button class="hover">Sign in</button>
+                <p class="last">New Coustomer? <a href="#">Start here.</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="panel1">
+            <a href="#">
+                <div class="back-top">
+                    Back to top
+                </div>
+            </a>
+        </div>
+        <div class="panel2">
+            <div class="panel2-box">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Carrers</a>
+                    </li>
+                    <li>
+                        <a href="#">Press Releases</a>
+                    </li>
+                    <li>
+                        <a href="#">Amazon Science</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel2-box">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel2-box">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li>
+                        <a href="#">Sell on Amazon</a>
+                    </li>
+                    <li>
+                        <a href="#">Sell under Amazon Accelerator</a>
+                    </li>
+                    <li>
+                        <a href="#">Protect and Build Your Brand</a>
+                    </li>
+                    <li>
+                        <a href="#">Amazon Global Selling</a>
+                    </li>
+                    <li>
+                        <a href="#">Become an Affiliate</a>
+                    </li>
+                    <li>
+                        <a href="#">Fulfilment by Amazon</a>
+                    </li>
+                    <li>
+                        <a href="#">Advertise Your Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Amazon Pay on Merchants</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel2-box">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li>
+                        <a href="#">COVID-19 and Amazon</a>
+                    </li>
+                    <li>
+                        <a href="#">Your Account</a>
+                    </li>
+                    <li>
+                        <a href="#">Returns Centre</a>
+                    </li>
+                    <li>
+                        <a href="#">100% Purchase Protection</a>
+                    </li>
+                    <li>
+                        <a href="#">Amazon App Download</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel3">
+            <div class="panel3-first">
+                <div class="foot-logo">
+                    <a href="#">
+                        <div class="logo border"></div>
+                    </a>
+                </div>
+                <div class="language hover">
+                    <i class="fa-solid fa-globe globe"></i>
+                    <p>English</p>
+                    <i class="fa-solid fa-caret-down drop-down"></i>
+                    <i class="fa-solid fa-caret-up drop-up"></i>
+                </div>
+            </div>
+            <div class="panel3-second">
+                <a href="#">Australia</a>
+                <a href="#">Brazil</a>
+                <a href="#">Canada</a>
+                <a href="#">France</a>
+                <a href="#">Germany</a>
+                <a href="#">Italy</a>
+                <a href="#">Japan</a>
+                <a href="#">Mexico</a>
+                <a href="#">Netherlands</a>
+                <a href="#">Poland</a>
+                <a href="#">Singapore</a>
+                <a href="#">Spain</a>
+                <a href="#">Turkey</a>
+                <a href="#">United Arab Emirates</a>
+                <a href="#">United Kingdom</a>
+                <a href="#">United States</a>
+            </div>
+        </div>
+        <div class="panel4">
+            <div class="panel4-first">
+                <a href="#">AbeBooks</a>
+                <a href="#">Amazon Web Services</a>
+                <a href="#">Audible</a>
+                <a href="#">DPReview</a>
+                <a href="#">IMDb</a>
+                <a href="#">Shopbop</a>
+                <a href="#">Amazon Business</a>
+                <a href="#">Prime Now</a>
+                <a href="#">Amazon Prime Music</a>
+            </div>
+            <div class="panel4-second">
+                <div class="panel4-second-first">
+                    <a href="#">Conditions of Use & Sale</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Intrest-Based Ads</a>
+                </div>
+                <div class="panel4-second-second">
+                    <p> &copy; 1996-2023, Amazon.com, Inc. or its affiliates</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
